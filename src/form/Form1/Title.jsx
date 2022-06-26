@@ -23,7 +23,7 @@ function Title({currentTab, createDuplicate, deleteTab, updateValues, updateShow
                         <div className="col-span-4 sm:col-span-3">
                             <div className="flex gap-4">
                                 <input type="checkbox"
-                                       className="mt-3 h-10 min-h-full w-5"
+                                       className="h-10 min-h-full w-5"
                                        onChange={e => updateShowHide("title", e.target.checked)}
                                        checked={currentTab.conditions.title ? true : false}/>
                                 <div className="col-span-3 sm:col-span-3">
@@ -45,7 +45,7 @@ function Title({currentTab, createDuplicate, deleteTab, updateValues, updateShow
                                        onChange={e => updateShowHide("UserIntro", e.target.checked)}
                                        checked={currentTab.conditions.UserIntro ? true : false}/>
                                 <label
-                                    className=" mt-4 block text-md font-medium text-black-700">Introduction</label>
+                                    className="mt-1 block text-md font-medium text-black-700">Introduction</label>
                             </div>
                             <input type="text"
                                    className="mt-1  h-3 min-h-full focus:ring-indigo-500
@@ -61,7 +61,7 @@ function Title({currentTab, createDuplicate, deleteTab, updateValues, updateShow
                                        className="mt-3 h-3 min-h-full w-5"
                                        onChange={e => updateShowHide("Responsibilities", e.target.checked)}
                                        checked={currentTab.conditions.Responsibilities ? true : false}/>
-                                <label className=" mt-4 block text-md font-medium text-black-700">Role &
+                                <label className="mt-1 block text-md font-medium text-black-700">Role &
                                     Responsibilities</label>
                             </div>
                             <input type="text"
@@ -84,7 +84,7 @@ function Title({currentTab, createDuplicate, deleteTab, updateValues, updateShow
                                        className="mt-3 h-3 min-h-full w-5"
                                        onChange={e => updateShowHide("UserQualification", e.target.checked)}
                                        checked={currentTab.conditions.UserQualification ? true : false}/>
-                                <label className=" mt-4 block text-md font-medium text-black-700">Qualification</label>
+                                <label className="mt-1 block text-md font-medium text-black-700">Qualification</label>
                             </div>
                             <input type="text"
                                    autoComplete="text"
@@ -115,7 +115,7 @@ function Title({currentTab, createDuplicate, deleteTab, updateValues, updateShow
                                        className="mt-3 h-3 min-h-full w-5"
                                        onChange={e => updateShowHide("userConcluding", e.target.checked)}
                                        checked={currentTab.conditions.userConcluding ? true : false}/>
-                                <label className="mt-4 block text-md font-medium text-black-700">Concluding
+                                <label className="mt-1 block text-md font-medium text-black-700">Concluding
                                     statement</label>
                             </div>
                             <input type="text"
@@ -128,15 +128,15 @@ function Title({currentTab, createDuplicate, deleteTab, updateValues, updateShow
                         <div className="block mt-8 col-span-6  sm:col-span-4">
                             <div className="flex gap-4 ">
                                 <input type="checkbox"
-                                       className="mt-3 h-3 min-h-full w-5"
+                                       className=" h-3 min-h-full w-5"
                                        onChange={e => updateShowHide("UserCompanyName", e.target.checked)}
                                        checked={currentTab.conditions.UserCompanyName ? true : false}/>
-                                <label className="block text-md font-medium text-black-700">Company
+                                <label className="mb-3 block text-md font-medium text-black-700">Company
                                     Name</label>
                             </div>
                             <input type="text"
                                    autoComplete="postal-code"
-                                   className="mt-1 h-3 min-h-full focus:ring-indigo-500
+                                   className=" h-3 min-h-full focus:ring-indigo-500
                                            focus:border-indigo-500 block w-full shadow-md md:text-md border-gray-300
                                            rounded-md" onChange={e => updateValues("UserCompanyName", e.target.value)}
                                    value={currentTab.UserCompanyName}/>
@@ -147,7 +147,7 @@ function Title({currentTab, createDuplicate, deleteTab, updateValues, updateShow
                                        className="mt-3 h-3 min-h-full w-5"
                                        onChange={e => updateShowHide("UserCompanyLocation", e.target.checked)}
                                        checked={currentTab.conditions.UserCompanyLocation ? true : false}/>
-                                <label className="block text-md font-medium text-black-700">Company
+                                <label className="mt-1 block text-md font-medium text-black-700">Company
                                     Location</label>
                             </div>
                             <input type="text"
@@ -157,7 +157,7 @@ function Title({currentTab, createDuplicate, deleteTab, updateValues, updateShow
                                    onChange={(e) => updateValues("UserCompanyLocation",
                                        e.target.value)} value={currentTab.UserCompanyLocation}/>
                         </div>
-                        <div className="block col-span-6 sm:col-span-3 text-black-700">
+                        <div className="block col-span-6  text-black-700">
                             <JobType select={(e) => updateValues("value", e.target.value)}
                                      jopType={(e) => updateValues("day", e.target.value)}
                                      currentTab={currentTab}
